@@ -257,7 +257,7 @@ func (r RecordFormat) String() string {
 
 func recordFormat(s string) RecordFormat {
 	switch s {
-	case "WARC/1.0":
+	case "WARC/1.0", "WARC/0.18":
 		return RecordFormatWarc
 	default:
 		return RecordFormatUnknown
